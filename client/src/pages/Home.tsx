@@ -29,7 +29,7 @@ export default function Home() {
     { icon: Glasses, key: "spec.refractive" },
     { icon: Activity, key: "spec.glaucoma" },
     { icon: ScanEye, key: "spec.retina" },
-    { icon: Baby, key: "spec.pediatric" },
+    { icon: Baby, key: "spec.oculoplasty" },
     { icon: Microscope, key: "spec.lenses" },
   ];
 
@@ -88,7 +88,7 @@ export default function Home() {
                    {/* Unsplash doctor image */}
                    {/* <img 
                     src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&auto=format&fit=crop&q=60" 
-                    alt="Dr. Amine El-Oueriachi" 
+                    alt="Dr Fahd Jendoubi" 
                     className="w-full h-full object-cover"
                   /> */}
                   <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/30">
@@ -109,8 +109,8 @@ export default function Home() {
                     <Activity className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="font-bold text-primary">10+ Années</p>
-                    <p className="text-xs text-muted-foreground">d'expérience</p>
+                    <p className="font-bold text-primary">Expert</p>
+                    <p className="text-xs text-muted-foreground">Chirurgie oculaire</p>
                   </div>
                 </motion.div>
               </motion.div>
@@ -205,15 +205,32 @@ export default function Home() {
                 {t("qualifications.title")}
               </h3>
               <ul className="space-y-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <li key={i} className="flex gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
-                    <div className="w-1.5 h-full rounded-full bg-primary/20 shrink-0" />
-                    <div>
-                      <h4 className="font-bold text-gray-900">Diplôme Universitaire {i}</h4>
-                      <p className="text-sm text-gray-500">Université de Médecine, 20XX</p>
-                    </div>
-                  </li>
-                ))}
+                <li className="flex gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="w-1.5 h-full rounded-full bg-primary/20 shrink-0" />
+                  <div>
+                    <h4 className="font-bold text-gray-900">{t("qual.doctorate")}</h4>
+                  </div>
+                </li>
+                <li className="flex gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="w-1.5 h-full rounded-full bg-primary/20 shrink-0" />
+                  <div>
+                    <h4 className="font-bold text-gray-900">{t("qual.specialty")}</h4>
+                  </div>
+                </li>
+                <li className="flex gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="w-1.5 h-full rounded-full bg-primary/20 shrink-0" />
+                  <div>
+                    <h4 className="font-bold text-gray-900">{t("qual.masters")}</h4>
+                    <ul className="text-sm text-gray-500 mt-2 space-y-1">
+                      <li>• {t("qual.contactology")}</li>
+                      <li>• {t("qual.microsurgery")}</li>
+                      <li>• {t("qual.oculoplasty")}</li>
+                      <li>• {t("qual.neuro")}</li>
+                      <li>• {t("qual.trauma")}</li>
+                      <li>• {t("qual.uveitis")}</li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
 
@@ -259,7 +276,11 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold mb-2">{t("info.hours")}</h4>
-                    <p className="text-muted-foreground whitespace-pre-line">{t("info.hours.text")}</p>
+                    <div className="text-muted-foreground space-y-1">
+                      <p>{t("info.hours.weekdays")}</p>
+                      <p>{t("info.hours.saturday")}</p>
+                      <p>{t("info.hours.sunday")}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -272,7 +293,10 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold mb-2">{t("info.payment")}</h4>
-                    <p className="text-muted-foreground">{t("info.payment.text")}</p>
+                    <div className="text-muted-foreground space-y-1">
+                      <p>{t("info.payment.cash")}</p>
+                      <p>{t("info.payment.cnam")}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -282,11 +306,15 @@ export default function Home() {
                 <div className="space-y-4">
                    <div className="flex items-center gap-3 text-gray-600">
                      <Phone className="w-5 h-5 text-primary" />
-                     <span dir="ltr">+212 5 39 00 00 00</span>
+                     <span dir="ltr">+216 20 988 415</span>
+                   </div>
+                   <div className="flex items-center gap-3 text-gray-600">
+                     <Phone className="w-5 h-5 text-primary" />
+                     <span dir="ltr">+216 20 988 742</span>
                    </div>
                    <div className="flex items-center gap-3 text-gray-600">
                      <Mail className="w-5 h-5 text-primary" />
-                     <span>contact@dramine.com</span>
+                     <span>jendoubi.fahd@gmail.com</span>
                    </div>
                    <div className="flex items-center gap-3 text-gray-600">
                      <MapPin className="w-5 h-5 text-primary" />
@@ -311,7 +339,7 @@ export default function Home() {
           </p>
         </div>
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.472772596489!2d-5.833954084742517!3d35.76727298017424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b875cf0480289%3A0x53e020228c247274!2sTanger!5e0!3m2!1sen!2sma!4v1620000000000!5m2!1sen!2sma" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.5097789438!2d10.1634!3d36.8065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sEzzahrouni%2C%20Tunis!5e0!3m2!1sfr!2stn!4v1620000000000!5m2!1sfr!2stn" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
@@ -326,7 +354,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-start">
-              <h2 className="text-2xl font-bold mb-2">Dr. Amine El-Oueriachi</h2>
+              <h2 className="text-2xl font-bold mb-2">Dr Fahd Jendoubi</h2>
               <p className="text-blue-200 text-sm">{t("hero.subtitle")}</p>
             </div>
             
@@ -344,7 +372,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-sm text-blue-200">
-            <p>&copy; {new Date().getFullYear()} Dr. Amine El-Oueriachi. {t("footer.rights")}</p>
+            <p>&copy; {new Date().getFullYear()} Dr Fahd Jendoubi. {t("footer.rights")}</p>
           </div>
         </div>
       </footer>

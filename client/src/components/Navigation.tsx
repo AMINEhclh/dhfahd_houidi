@@ -54,7 +54,7 @@ export function Navigation() {
             </div>
             <div className="flex flex-col">
               <span className="text-sm md:text-base font-bold text-primary leading-tight">
-                Dr. Amine El-Oueriachi
+                Dr Fahd Jendoubi
               </span>
               <span className="text-xs text-muted-foreground hidden sm:inline-block">
                 {t("hero.subtitle")}
