@@ -1,7 +1,7 @@
 
+
+# or, if your project is in a subfolder named "frontend"
 [build]
-  base = "."
-  publish = "build"        # adjust publish directory as needed
-  command = "npm run build"
-
-
+  base = "frontend"
+  publish = "frontend/dist"
+  command = "npm --prefix frontend run build"
