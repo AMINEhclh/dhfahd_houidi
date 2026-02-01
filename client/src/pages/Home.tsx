@@ -21,7 +21,10 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import drImage from "@assets/226538_dr-fahd-jendoubi_1748858999_1769960156913.webp";
-import cabinetImage from "@assets/226538-dr-fahd-jendoubi-1752834998_1769960262546.webp";
+import cabinetImage1 from "@assets/226538-dr-fahd-jendoubi-1752834936_(1)_1769960324610.webp";
+import cabinetImage2 from "@assets/226538-dr-fahd-jendoubi-1752834936_1769960324610.webp";
+import cabinetImage3 from "@assets/226538-dr-fahd-jendoubi-1752834978_1769960324610.webp";
+import cabinetImage4 from "@assets/226538-dr-fahd-jendoubi-1752834998_1769960324611.webp";
 
 export default function Home() {
   const { t, direction } = useLanguage();
@@ -126,7 +129,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 order-2 md:order-1">
                <img 
-                 src={cabinetImage}
+                 src={cabinetImage4}
                  alt="Cabinet du Dr Fahd Jendoubi"
                  className="rounded-2xl shadow-lg w-full h-auto object-cover aspect-video"
                />
@@ -235,17 +238,13 @@ export default function Home() {
                 {t("cabinet.title")}
               </h3>
               <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map((i) => (
+                {[cabinetImage1, cabinetImage2, cabinetImage3, cabinetImage4].map((img, i) => (
                   <div key={i} className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group">
-                    {/* Unsplash clinic interior */}
-                    {/* <img 
-                      src={`https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&fit=crop`} 
+                    <img 
+                      src={img} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      alt="Cabinet" 
-                    /> */}
-                     <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-                        <span className="text-gray-400">Photo {i}</span>
-                     </div>
+                      alt={`Cabinet Photo ${i + 1}`} 
+                    />
                   </div>
                 ))}
               </div>
