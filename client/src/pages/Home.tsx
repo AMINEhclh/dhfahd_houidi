@@ -20,7 +20,7 @@ import {
   Linkedin
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import drImage from "@assets/226538_dr-fahd-jendoubi_1748858999_1769960156913.webp";
+import drImage from "@assets/226538_dr-fahd-jendoubi_1748858999_1769960405473.webp";
 import cabinetImage1 from "@assets/226538-dr-fahd-jendoubi-1752834936_(1)_1769960324610.webp";
 import cabinetImage2 from "@assets/226538-dr-fahd-jendoubi-1752834936_1769960324610.webp";
 import cabinetImage3 from "@assets/226538-dr-fahd-jendoubi-1752834978_1769960324610.webp";
@@ -238,7 +238,7 @@ export default function Home() {
                 {t("cabinet.title")}
               </h3>
               <div className="grid grid-cols-2 gap-4">
-                {[cabinetImage1, cabinetImage2, cabinetImage3, cabinetImage4].map((img, i) => (
+                {[drImage, cabinetImage2, cabinetImage3, cabinetImage4].map((img, i) => (
                   <div key={i} className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group">
                     <img 
                       src={img} 
