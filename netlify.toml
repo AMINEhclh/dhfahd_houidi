@@ -1,6 +1,9 @@
-# netlify.toml
 [build]
-  # optional: if your site is inside a subfolder, set base, otherwise remove this line
-  # base = "subfolder"
-  publish = "dist"         # folder to publish (adjust to your build output)
-  command = "npm run build" # adjust to your build command
+  base = "client"
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
