@@ -103,14 +103,14 @@ export default function Home() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5 }}
-                  className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:-bottom-6 sm:left-6 sm:translate-x-0 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-2 sm:gap-3 max-w-[150px] sm:max-w-[200px]"
+                  className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:-bottom-6 sm:left-6 sm:translate-x-0 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-2 sm:gap-3 max-w-[180px] sm:max-w-[200px] z-20"
                 >
                   <div className="bg-green-100 p-1.5 sm:p-2 rounded-full text-green-600 shrink-0">
                     <Activity className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
                     <p className="font-bold text-primary text-xs sm:text-base">Expert</p>
-                    <p className="text-[10px] sm:text-xs text-muted-foreground">Chirurgie oculaire</p>
+                    <p className="text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap">Chirurgie oculaire</p>
                   </div>
                 </motion.div>
               </motion.div>
