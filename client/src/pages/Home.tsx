@@ -20,6 +20,7 @@ import {
   Linkedin
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import drImage from "@assets/226538_dr-fahd-jendoubi_1748858999_1769960156913.webp";
 
 export default function Home() {
   const { t, direction } = useLanguage();
@@ -85,15 +86,11 @@ export default function Home() {
               >
                 {/* Doctor Placeholder Image */}
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-tr from-gray-200 to-gray-100 relative">
-                   {/* Unsplash doctor image */}
-                   {/* <img 
-                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&auto=format&fit=crop&q=60" 
+                  <img 
+                    src={drImage} 
                     alt="Dr Fahd Jendoubi" 
                     className="w-full h-full object-cover"
-                  /> */}
-                  <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/30">
-                    <Eye className="w-32 h-32" />
-                  </div>
+                  />
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
                 </div>
