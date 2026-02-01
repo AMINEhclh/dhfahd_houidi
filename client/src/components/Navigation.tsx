@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { clsx } from "clsx";
 
+import logoImg from "@assets/fb8c1414-e81c-43ed-afa9-634708714d64_removalai_preview_1769960469953.png";
+
 export function Navigation() {
   const { language, setLanguage, t, direction } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,8 +51,8 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2 md:gap-3 cursor-pointer" onClick={() => scrollToSection('#home')}>
-            <div className="p-2 bg-primary rounded-lg text-white">
-              <Eye className="w-6 h-6 md:w-7 md:h-7" />
+            <div className="flex items-center">
+              <img src={logoImg} alt="Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="text-sm md:text-base font-bold text-primary leading-tight">
