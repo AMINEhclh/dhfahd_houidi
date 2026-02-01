@@ -90,7 +90,7 @@ export function Navigation() {
             
             <Button 
               size="sm" 
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => window.open('https://www.med.tn/rendez-vous/dr-fahd-jendoubi/226538', '_blank')}
               className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20"
             >
               {t("hero.cta")}
@@ -139,7 +139,7 @@ export function Navigation() {
               ))}
               <Button 
                 className="w-full mt-2" 
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => window.open('https://www.med.tn/rendez-vous/dr-fahd-jendoubi/226538', '_blank')}
               >
                 {t("hero.cta")}
               </Button>

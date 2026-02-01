@@ -65,7 +65,7 @@ export default function Home() {
                   <Button 
                     size="lg" 
                     className="text-lg px-8 py-6 rounded-xl shadow-xl shadow-primary/20 hover:shadow-primary/30 hover:-translate-y-1 transition-all"
-                    onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => window.open('https://www.med.tn/rendez-vous/dr-fahd-jendoubi/226538', '_blank')}
                   >
                     {t("hero.cta")}
                   </Button>
