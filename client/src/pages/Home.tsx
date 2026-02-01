@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import drImage from "@assets/226538_dr-fahd-jendoubi_1748858999_1769960156913.webp";
+import cabinetImage from "@assets/226538-dr-fahd-jendoubi-1752834998_1769960262546.webp";
 
 export default function Home() {
   const { t, direction } = useLanguage();
@@ -124,15 +125,11 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 order-2 md:order-1">
-               {/* Unsplash abstract medical or eye anatomy */}
-               {/* <img 
-                 src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&auto=format&fit=crop"
-                 alt="Ophtalmology"
+               <img 
+                 src={cabinetImage}
+                 alt="Cabinet du Dr Fahd Jendoubi"
                  className="rounded-2xl shadow-lg w-full h-auto object-cover aspect-video"
-               /> */}
-               <div className="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center text-muted-foreground">
-                 <ScanEye className="w-24 h-24 opacity-20" />
-               </div>
+               />
             </div>
             <div className="flex-1 order-1 md:order-2">
               <SectionHeader title={t("about.title")} subtitle={t("nav.about")} centered={false} />
