@@ -186,7 +186,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">{t(spec.key)}</h3>
                 <p className="text-muted-foreground text-sm">
-                  {t("hero.description").substring(0, 50)}...
+                  {/* Text removed */}
                 </p>
               </motion.div>
             ))}
