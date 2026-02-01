@@ -265,9 +265,9 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeader title={t("contact.title")} subtitle={t("nav.contact")} />
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-1 gap-12">
             {/* Left Column: Info */}
-            <div className="space-y-8">
+            <div className="space-y-8 max-w-2xl mx-auto w-full">
               {/* Hours */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                 <div className="flex items-start gap-4">
@@ -324,8 +324,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column: Form */}
-            <ContactForm />
+            {/* Right Column: Form removed */}
           </div>
         </div>
       </section>
