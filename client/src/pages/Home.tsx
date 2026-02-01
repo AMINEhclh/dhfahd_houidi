@@ -17,7 +17,6 @@ import {
   CreditCard,
   Facebook,
   Instagram,
-  Linkedin
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import drImage from "@assets/226538_dr-fahd-jendoubi_1748858999_1769960405473.webp";
@@ -338,14 +337,11 @@ export default function Home() {
             </div>
             
             <div className="flex gap-6">
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61576203074480" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+              <a href="https://www.instagram.com/dr_fahd_jendoubi" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
-                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
